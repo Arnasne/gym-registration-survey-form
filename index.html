@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<title>FCC survey form</title>
+</head>
+<body>
+	<div class="content">
+		<h1 id="title">FreeCodeCamp survey form</h1>	
+		<p id="description">
+		<p id="reg-form">Gym registration form. Fill all fields below.</p>  
+		</p>
+	<hr><br>
+	<div class="div-survey">
+	<form id="survey-form">
+		<p><label class="1form" id="name-label" for="name">Name:</label></p>
+		<input type="name" id="name" name="name" placeholder="Enter your name">
+		<p><label class="text" id="email-label" for="email">Email:</label></p>
+		<input type="email" id="email" name="email" placeholder="example@email.com">
+		<p><label class="text" id="number-label" for="age">Age:</label></p>
+		<input type="number" id="number" name="age" min="1" max="200" placeholder="Your age"><br>	
+	</div>		
+		<p class="selects-bold">Select your gender:</p>
+	<div>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>			
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br><br>	
+	</div>	
+
+	<div id="dropdown">
+		<p class="selects-bold">Select your personal trainer (optional)</p>
+		<select id="dropdown-font">
+			<option value="0">None</option>
+			<option value="1">Arnold Schwarzenegger</option>
+			<option value="2">Ronnie Coleman</option>
+			<option value="3">Jay Cutler</option>
+		</select>
+	</div><br><br>
+		
+			<p class="selects-bold">Select your training days:</p>
+	<div class="training">
+		<input type="checkbox" id="days" name="mo" value="monday">
+		<label for="days">Monday</label><br>
+		<input class="input-align" type="checkbox" id="tu" name="tu" value="tuesday">
+		<label for="tu">Tuesday</label><br>
+		<input type="checkbox" id="days" name="we" value="wednesday">
+		<label for="days">Wednesday</label><br>
+		<input type="checkbox" id="days" name="th" value="thursday">
+		<label for="days">Thursday</label><br>
+		<input type="checkbox" id="days" name="fr" value="friday">
+		<label for="days">Friday</label><br>
+		<input type="checkbox" id="days" name="sa" value="saturday">
+		<label for="days">Saturday</label><br>
+		<input type="checkbox" id="days" name="su" value="sunday">
+		<label for="days">Sunday</label><br><br>
+	</div>		
+	<hr><br>
+	<div class="text-area">
+		<label>You can leave a comment below:</label></p>
+			<textarea rows="8" cols="30"></textarea><br><br>
+	</div>
+			
+	<p class="text">To confirm your registration click register</p>
+	<div id="register">
+		<input type="submit" id="submit" value="Register">
+	</div>
+	</form>
+	</div>	
+</body>
+</html>
